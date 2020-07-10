@@ -1,0 +1,328 @@
+main{
+    background-image: url("./images/Rectangle\ 1.png");
+    height: 759px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+p{
+    font-size: 18px;
+}
+nav .container{
+   position: relative;
+    background-color:transparent !important;
+    color:white !important
+}
+.navw a{
+    color:white !important
+}
+.logo{
+    font-size: 30px !important;
+    font-weight: bolder;
+    margin-left: 5% !important
+}
+.logo span{
+    color: #6F2CFF;
+}
+.active{
+    border-bottom: 2px solid #6F2CFF
+}
+.hero-text{position: relative;
+    color: white;
+    top:30%;
+}
+.hero-text button{
+    color: white;
+    border: 3px solid #6F2CFF
+}
+.hero-text h4{
+    color:#6F2CFF;
+    font-size: 34px;
+    font-weight: bolder
+}
+.hero-text h1{
+    font-size:84px;
+    color:white;
+    font-weight: bolder
+}
+.hero-text p{
+    width: 160px;
+    font-weight: 200;
+    color: whitesmoke;
+    text-align: center;
+    padding: 0 !important;
+    position: relative;
+    transform: translateX(-50%);
+    left:50%;
+    border-right:2px solid white !important;
+    border-left:2px solid white !important
+}
+.icon-holder{
+    position: absolute;
+    top:45%;
+}
+.icon-holder img{
+    margin-right:20px;
+}
+.about-text p{
+    font-size: 1.5vw;
+    line-height: 30px;
+}
+.profile p{
+    padding-right: 2vw;
+    line-height: 30px;
+    font-size: 1.5vw
+}
+.skills ul{
+    padding-left: 20px;
+    margin: 0
+}
+.skills li{
+    margin-top: 30px
+}
+.progress{
+    height: 5px !important;
+    background-color:#C4C4C4
+}
+.progress-bar{
+    width:80%;
+    height:5px;
+    background-color: #000000 !important;
+}
+.skills-text{
+    height:250px;
+    margin-bottom: 30px;
+}
+.button-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-flex button{
+    font-size: 12px;
+    padding:10px 20px;
+    width:147px !important;
+    height:50px !important;
+    margin:20px 40px;
+    text-align: center !important;
+}
+.but1{
+    background-color: white;
+    border:2px solid #6F2CFF;
+}
+.but2{
+    background-color: #6F2CFF;
+    border:2px solid white;
+    color: white;
+}
+.port-text p{
+    font-size:1.3vw;
+}
+.port-text h5{
+    font-size:1.2vw;
+}
+.port{
+    height: 25vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.port1{
+    background-color:rgb(1, 129, 1);
+    order: 1;
+}
+.port2{
+    background-color:#8C32F0;
+    order: 1;
+}
+.port3{
+    background-color:#F60000;
+    order: 1
+}
+.port4{
+    background-color:rgb(16, 145, 165);
+    order: 1;
+}
+.services-items{
+    width:270px;
+    height:280px;
+    margin-bottom: 50px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:20px 15px;
+    border: 2px solid #C4C4C4;
+    border-radius: 10px;
+}
+.line{
+    width:40px;
+    height:2px;
+    background-color: #000000;
+}
+#services{
+    background-color: #ffffff;
+    padding-bottom: 30px;
+}
+.before{
+    width:100px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.before-contact{
+    background-color: #6F2CFF;
+    padding: 20px 16% !important;
+}
+.after-contact{
+    padding: 20px 12% !important;
+}
+.after p{
+    font-size: 14px
+}
+.after{
+    color: #A9A9A9 !important;
+    width:151px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+input{
+    width: 60%;
+    border: none;
+    color: #A9A9A9;
+    border-bottom: 1px solid #C4C4C4;
+    margin-bottom: 30px !important;
+}
+textarea{
+    width: 60%;
+    border: none;
+    height: 146px;
+    color: #A9A9A9;
+    margin-bottom: 30px !important;
+    border-bottom: 1px solid #C4C4C4
+}
+.submit{
+    width:60% !important;
+    background-color: #6F2CFF !important;
+    color: white !important;
+    height:50px !important
+}
+.dif{
+    color:#6F2CFF;
+    padding-top:70px
+}
+footer{
+    text-align: center;
+    padding: 10px 90px
+}
+footer span{
+    margin-right:10px;
+
+}
+.icon-holder1 img{
+    margin-right:20px;
+}
+.icon-holder1{
+    margin-right:20px!important;
+    margin-top:-10px
+}
+@media only screen and (max-width:576px) {
+    main{
+        background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("./images/Rectangle\ 2.png");
+        height: 812px;
+        background-repeat: no-repeat;
+    }
+    p{
+        font-size: 14px !important
+    }
+    .mobile-nav{
+        background-color: rgba(3, 0, 8, 0.932);
+        z-index: 100;
+    }
+    .hero-text{
+        padding-top: 200px;
+        position: static !important;
+        color: white;
+        top:27%;
+        margin-bottom: 50vw
+    }
+    .hero-text h1{
+        font-size:42px;
+        color:white;
+        font-weight: bolder
+    }
+    .icon-holder{
+        position: static !important;
+        top: 0
+    }
+    
+    .profile p{
+        text-align: center;
+        padding: 0;
+        font-size: 14px !important
+    }
+    .button-flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .button-flex button{
+        width:100% !important;
+        height:50px !important;
+        margin:20px 20px;
+        text-align: center !important;
+    }
+    .port{
+        height: 60vw;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #portfolio{
+        padding: 20px 20px !important
+    }
+    .port-text p, .port-text h4, .port-text h5{
+        text-align: left !important
+    }
+    .port-text h5{
+        font-size:3vw;
+    }
+    .before-flex{
+        flex-direction: column;
+        align-items: center
+    }
+    input{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
+    .submit{
+        width:100% !important;
+    }
+    .hide{
+        display: none;
+    }
+    footer{
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding:20px 20px
+    }
+    .icon-holder1{
+        text-align: center !important;
+        margin-right:auto !important;
+    }
+    #about h5{
+        font-size: 14px !important;
+        font-weight: normal;
+        color:black
+    }
+}
+
+
