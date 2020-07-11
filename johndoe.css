@@ -1,12 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary-text:"lora", sans-serif;
+    --bold: 'Poppins';
+    --main-colour: #6F2CFF;
+    --small-text-size:18px;
+
+}
+
 main{
     background-image: url("./images/Rectangle\ 1.png");
-    height: 759px;
+    height: 800px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center
+    background-position: center center;
+    font-family: var(--bold)
 }
 p{
     font-size: 18px;
+    font-family: var(--primary-text)
 }
 nav .container{
    position: relative;
@@ -29,7 +41,7 @@ nav .container{
 }
 .hero-text{position: relative;
     color: white;
-    top:30%;
+    top:26%;
 }
 .hero-text button{
     color: white;
@@ -46,7 +58,7 @@ nav .container{
     font-weight: bolder
 }
 .hero-text p{
-    width: 160px;
+    width: 200px;
     font-weight: 200;
     color: whitesmoke;
     text-align: center;
@@ -59,19 +71,22 @@ nav .container{
 }
 .icon-holder{
     position: absolute;
-    top:45%;
+    top:50%;
 }
 .icon-holder img{
     margin-right:20px;
 }
 .about-text p{
-    font-size: 1.5vw;
+    font-size: 18px;
     line-height: 30px;
 }
 .profile p{
     padding-right: 2vw;
     line-height: 30px;
     font-size: 1.5vw
+}
+.details p{
+    text-align: left !important
 }
 .skills ul{
     padding-left: 20px;
@@ -93,6 +108,16 @@ nav .container{
     height:250px;
     margin-bottom: 30px;
 }
+.skills-text p{
+    font-size: 18px
+}
+h1,h2,h3,h4{
+    font-family: var(--bold)
+}
+.details p{
+    font-size: 16px;
+    font-family: var(--bold)
+}
 .button-flex{
     display: flex;
     justify-content: center;
@@ -108,7 +133,13 @@ nav .container{
 }
 .but1{
     background-color: white;
-    border:2px solid #6F2CFF;
+    border:3px solid #6F2CFF;
+    transition: all 0.5s ease-in-out
+}
+.but1:hover{
+    background-color: #6F2CFF;
+    color: white;
+    transition: all 0.5s ease-in-out
 }
 .but2{
     background-color: #6F2CFF;
@@ -116,10 +147,16 @@ nav .container{
     color: white;
 }
 .port-text p{
-    font-size:1.3vw;
+    font-size:1.2vw;
+    font-family: var(--primary-text)
+}
+.port-text h4{
+    font-weight: 500;
+    font-family: var(--bold)
 }
 .port-text h5{
-    font-size:1.2vw;
+    font-size:15px;
+    font-family: var(--bold)
 }
 .port{
     height: 25vw;
@@ -144,9 +181,42 @@ nav .container{
     background-color:rgb(16, 145, 165);
     order: 1;
 }
+#resume{
+    background-color: #E5E5E5
+}
+#experience{
+    background-color: #E5E5E5;
+    position: relative;
+    height: 700px;
+}
+
+.vertical { 
+    border-left: 6px solid black; 
+    height: 700px; 
+    position:absolute; 
+    left: 30%; 
+} 
+.exp-item{
+    top:30%;
+    margin-top: 80px;
+}
+.left{
+    top:11%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left:20%;
+}
+.right{
+    top:20%;
+    padding: 10px 20px;
+    width: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left:60%
+}
 .services-items{
     width:270px;
-    height:280px;
+    height:300px;
     margin-bottom: 50px;
     background-color: #FFFFFF;
     display: flex;
@@ -155,15 +225,17 @@ nav .container{
     padding:20px 15px;
     border: 2px solid #C4C4C4;
     border-radius: 10px;
+    transition: all 0.5s ease-in-out
+}
+.services-items:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out
 }
 .line{
     width:40px;
     height:2px;
     background-color: #000000;
-}
-#services{
-    background-color: #ffffff;
-    padding-bottom: 30px;
 }
 .before{
     width:100px;
@@ -171,10 +243,11 @@ nav .container{
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 10px 0
 }
 .before-contact{
     background-color: #6F2CFF;
-    padding: 20px 16% !important;
+    padding: 20px 14% !important;
 }
 .after-contact{
     padding: 20px 12% !important;
@@ -213,7 +286,9 @@ textarea{
 }
 .dif{
     color:#6F2CFF;
-    padding-top:70px
+    font-size: 16px;
+    font-weight: bold;
+    padding-top:40px
 }
 footer{
     text-align: center;
@@ -224,7 +299,7 @@ footer span{
 
 }
 .icon-holder1 img{
-    margin-right:20px;
+    margin-left:20px;
 }
 .icon-holder1{
     margin-right:20px!important;
@@ -251,7 +326,7 @@ footer span{
         margin-bottom: 50vw
     }
     .hero-text h1{
-        font-size:42px;
+        font-size:42px !important;
         color:white;
         font-weight: bolder
     }
@@ -259,7 +334,9 @@ footer span{
         position: static !important;
         top: 0
     }
-    
+    h1, h2{
+        font-size: 24px !important;
+    }
     .profile p{
         text-align: center;
         padding: 0;
@@ -307,21 +384,18 @@ footer span{
     .hide{
         display: none;
     }
-    footer{
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
-        padding:20px 20px
-    }
-    .icon-holder1{
-        text-align: center !important;
-        margin-right:auto !important;
-    }
     #about h5{
         font-size: 14px !important;
         font-weight: normal;
         color:black
+    }
+    footer{
+        padding:10px 20px !important;
+    }
+    .footer-flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
