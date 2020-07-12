@@ -83,7 +83,7 @@ nav .container{
 .profile p{
     padding-right: 2vw;
     line-height: 30px;
-    font-size: 1.5vw
+    font-size: 1.5vw;
 }
 .details p{
     text-align: left !important
@@ -105,7 +105,7 @@ nav .container{
     background-color: #000000 !important;
 }
 .skills-text{
-    height:250px;
+    height:300px;
     margin-bottom: 30px;
 }
 .skills-text p{
@@ -134,7 +134,8 @@ h1,h2,h3,h4{
 .but1{
     background-color: white;
     border:3px solid #6F2CFF;
-    transition: all 0.5s ease-in-out
+    transition: all 0.5s ease-in-out;
+    border-radius: 5px
 }
 .but1:hover{
     background-color: #6F2CFF;
@@ -145,6 +146,7 @@ h1,h2,h3,h4{
     background-color: #6F2CFF;
     border:2px solid white;
     color: white;
+    border-radius: 5px
 }
 .port-text p{
     font-size:1.2vw;
@@ -186,33 +188,53 @@ h1,h2,h3,h4{
 }
 #experience{
     background-color: #E5E5E5;
-    position: relative;
-    height: 700px;
+    padding-top:40px
+
 }
 
-.vertical { 
-    border-left: 6px solid black; 
-    height: 700px; 
-    position:absolute; 
-    left: 30%; 
+
+.middle{
+    position: absolute;
+    left:35%;
+    top:0;
+    background-color: #000000;
+    border-radius: 50%;
+    width: 70px;
+    height:70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100
 } 
 .exp-item{
-    top:30%;
-    margin-top: 80px;
+    position: relative;
+    height: 250px;
+}
+.exp-item h4{
+    font-weight: bolder
+}
+#resume .dif{
+    font-size: 24px !important
 }
 .left{
-    top:11%;
+    width: 260px;
     position: absolute;
-    transform: translate(-50%,-50%);
-    left:20%;
+    left:5%;
+    text-align: right;
+    top:0;
+    margin-top: 20px
 }
 .right{
-    top:20%;
-    padding: 10px 20px;
-    width: 50%;
+    width: 50vw;
     position: absolute;
-    transform: translate(-50%,-50%);
-    left:60%
+    left:38%;
+    top:0;
+    height:99%;
+    border-left:1px solid black;
+    padding:20px 1px 20px 80px;
+}
+.left p{
+    margin-top:-10px
 }
 .services-items{
     width:270px;
@@ -290,6 +312,16 @@ textarea{
     font-weight: bold;
     padding-top:40px
 }
+.handy:hover, .handy:target, .handy:focus{
+    outline:none;
+    border:none;
+    border-style:none
+}
+.handy{
+    outline:none;
+    border:none;
+    border-style:none !important
+}
 footer{
     text-align: center;
     padding: 10px 90px
@@ -315,7 +347,6 @@ footer span{
         font-size: 14px !important
     }
     .mobile-nav{
-        background-color: rgba(3, 0, 8, 0.932);
         z-index: 100;
     }
     .hero-text{
@@ -397,6 +428,56 @@ footer span{
         justify-content: center;
         align-items: center;
     }
+    .middle{
+        width:30px;
+        height: 30px;
+        left:11.5vw;
+    }
+    .middle img{
+        width:20px
+    }
+    .left{
+        margin-top: 1px !important;
+        text-align: left;
+        left: 27%;
+    }
+    .right p{
+        font-size:12px !important;
+    }
+    .exp-item h4{
+        font-size: 18px !important;
+    }
+    .exp-item{
+        padding: 0 0;
+        height: 290px !important
+    }
+    .right{
+        margin-top:0px;
+        left:17%;
+        width:70vw !important;
+        padding:50px 5px 0 30px !important
+    }
 }
-
+@media only screen and (min-width:600px){
+    @media only screen and (max-width:992px){
+        .middle{
+            position: absolute;
+            left:33% !important;
+            top:0;
+            background-color: #000000;
+            border-radius: 50%;
+            width: 70px;
+            height:70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100
+        } 
+        .left{
+            width: 230px !important;
+            left:0% !important;
+            padding-right: 40px
+        }
+    }
+}
 
